@@ -20,11 +20,11 @@
 
 FROM        node:alpine
 
-LABEL       author="Dan Wahlin"
+LABEL       author="Jim Hillier"
 
 ARG         PACKAGES=nano
 
-ENV         TERM xterm
+ENV         TERM=xterm
 RUN         apk update && apk add $PACKAGES
 
 WORKDIR     /var/www
